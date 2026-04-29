@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/vite-env.d.ts","./src/components/topicmodal.tsx","./src/graphql/client.ts","./src/graphql/queries.ts","./src/graphql/schema.ts","./src/graphql/topicsfromjson.ts","./src/lib/topicpreview.ts","./src/pages/interviewpreppage.tsx"],"errors":true,"version":"5.7.3"}
