@@ -1,18 +1,24 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ApolloProvider } from "@apollo/client";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { apolloClient } from "./graphql/client";
 import InterviewPrepPage from "./pages/InterviewPrepPage";
 import "./index.css";
 
+/** Match Vite `base` (e.g. `/repo/`) for GitHub Pages; omit when running at domain root. */
+function routerBasename(): string | undefined {
+  const raw = import.meta.env.BASE_URL;
+  if (raw === "/" || raw === "") return undefined;
+  return raw.replace(/\/$/, "");
+}
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename()}>
       <Routes>
-        <Route path="/" element={<Navigate to="/interview-prep" replace />} />
-        <Route path="/interview-prep" element={<InterviewPrepPage />} />
+        <Route path="/" element={<InterviewPrepPage />} />
       </Routes>
     </BrowserRouter>
   );

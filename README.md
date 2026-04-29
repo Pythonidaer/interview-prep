@@ -4,9 +4,25 @@ Minimal React + GraphQL glossary UI for reviewing topic definitions loaded from 
 
 ## Interview prep page
 
-- **Route:** `/interview-prep` (also redirects from `/`)
+- **Route:** `/` (single-page app)
 - **Component:** [`src/pages/InterviewPrepPage.tsx`](./src/pages/InterviewPrepPage.tsx)
-- **Run locally:** `npm install` → `npm run dev` → open the URL Vite prints (often `http://localhost:5173/interview-prep`)
+- **Run locally:** `npm install` → `npm run dev` → open the URL Vite prints (usually `http://localhost:5173/`)
+
+## GitHub Pages
+
+This app is a static Vite build. Deployments fail or show a blank page when:
+
+1. **`base` is wrong** — GitHub project sites live at `https://<user>.github.io/<repo>/`, so JS/CSS must load from `/<repo>/assets/...`. [`vite.config.ts`](./vite.config.ts) sets **`base`** from `GITHUB_REPOSITORY` during `npm run build` in Actions (or override with `BASE_PATH=/your-repo/`). If your repo is **`YOURNAME.github.io`** (user/org site at the domain root), `base` resolves to **`/`** automatically.
+2. **Router `basename`** — [`src/main.tsx`](./src/main.tsx) uses `import.meta.env.BASE_URL` so React Router matches that prefix.
+3. **Publish `dist/`** — The workflow [`.github/workflows/deploy-github-pages.yml`](./.github/workflows/deploy-github-pages.yml) builds and uploads the **`dist`** output. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions** (not “Deploy from a branch” unless you know you want that). Check the **Actions** tab for workflow errors; first deploy can take a few minutes to go live.
+
+**Local check of a production build** (same paths as CI):
+
+```bash
+GITHUB_REPOSITORY=yourname/interview-prep npm run build && npx vite preview --base /interview-prep/
+```
+
+(Replace `yourname/interview-prep` with your real `owner/repo`.)
 
 ## Shape of `interview.json`
 
