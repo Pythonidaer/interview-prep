@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "validate:interview": "node scripts/validate-interview-json.mjs",
+    "validate:ai-role": "node scripts/validate-ai-role-json.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

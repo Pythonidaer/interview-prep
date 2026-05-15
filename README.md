@@ -1,11 +1,18 @@
 # Interview prep
 
-Minimal React + GraphQL glossary UI for reviewing topic definitions loaded from [`interview.json`](./interview.json).
+Minimal React + GraphQL glossary UI for reviewing topic definitions loaded from JSON.
 
-## Interview prep page
+## Pages and routes
 
-- **Route:** `/` (single-page app)
-- **Component:** [`src/pages/InterviewPrepPage.tsx`](./src/pages/InterviewPrepPage.tsx)
+| Tab | Route | Page | Data file |
+| --- | --- | --- | --- |
+| Interview Prep | `/` | [`src/pages/InterviewPrepPage.tsx`](./src/pages/InterviewPrepPage.tsx) | [`interview.json`](./interview.json) |
+| AI Role | `/ai-role` | [`src/pages/AIRolePage.tsx`](./src/pages/AIRolePage.tsx) | [`ai-role.json`](./ai-role.json) |
+
+Top-level navigation lives in [`src/components/AppNav.tsx`](./src/components/AppNav.tsx) inside [`src/layouts/AppLayout.tsx`](./src/layouts/AppLayout.tsx).
+
+Both pages share the same card grid, search filter, and modal experience via [`src/components/TopicGlossaryPage.tsx`](./src/components/TopicGlossaryPage.tsx).
+
 - **Run locally:** `npm install` → `npm run dev` → open the URL Vite prints (usually `http://localhost:5173/`)
 
 ## GitHub Pages
@@ -47,11 +54,45 @@ Definitions that contain `. ` (period followed by space) are split only for labe
 
 If `. ` never appears in a definition, only one modal section is shown (**Explanation**) with the full string.
 
+## Shape of `ai-role.json`
+
+[`ai-role.json`](./ai-role.json) powers the **AI Role** tab. Each key is a topic id (`snake_case`). Each value is an object with two verbatim strings:
+
+```json
+{
+  "product_builder": {
+    "explanation": "A “product-builder” mindset refers to ...",
+    "plainEnglishExplanation": "It means actually building useful software ..."
+  }
+}
+```
+
+Do not rewrite definitions in code—the UI displays imported strings as-is. After editing, run **`npm run validate:ai-role`**.
+
+### Adding more AI Role terms
+
+1. Open [`ai-role.json`](./ai-role.json).
+2. Add a new key with `explanation` and `plainEnglishExplanation` (preserve exact wording).
+3. Run `npm run validate:ai-role`.
+4. Refresh the app—the grid sorts topics by display title automatically.
+
+Display titles are derived from each key (underscores → words). Optional title overrides can be added later in [`src/graphql/aiRoleTopicsFromJson.ts`](./src/graphql/aiRoleTopicsFromJson.ts) if needed.
+
+## Search and modal (both tabs)
+
+- **Search:** Client-side filter in [`TopicGlossaryPage`](./src/components/TopicGlossaryPage.tsx) via [`topicMatchesKeywords`](./src/lib/filterTopics.ts)—case-insensitive, matches title, id, and full text; multiple words must all match.
+- **Modal:** [`TopicModal`](./src/components/TopicModal.tsx)—Escape and backdrop click close; focus moves into the dialog when opened and returns to the card that opened it when closed.
+
 ## GraphQL data flow
 
-[`src/graphql/schema.ts`](./src/graphql/schema.ts) defines an executable schema and resolvers fed by imported JSON logic in [`src/graphql/topicsFromJson.ts`](./src/graphql/topicsFromJson.ts). The Apollo client uses [`SchemaLink`](./src/graphql/client.ts) so queries run **in the browser** against that schema—no separate HTTP GraphQL server.
+[`src/graphql/schema.ts`](./src/graphql/schema.ts) defines an executable schema and resolvers fed by:
 
-**Query:**
+- [`src/graphql/topicsFromJson.ts`](./src/graphql/topicsFromJson.ts) → `interviewTopics`
+- [`src/graphql/aiRoleTopicsFromJson.ts`](./src/graphql/aiRoleTopicsFromJson.ts) → `aiRoleTopics`
+
+The Apollo client uses [`SchemaLink`](./src/graphql/client.ts) so queries run **in the browser** against that schema—no separate HTTP GraphQL server.
+
+**Queries** (see [`src/graphql/queries.ts`](./src/graphql/queries.ts)):
 
 ```graphql
 query InterviewTopics {
@@ -62,6 +103,15 @@ query InterviewTopics {
     plainEnglishExplanation
   }
 }
+
+query AiRoleTopics {
+  aiRoleTopics {
+    id
+    title
+    explanation
+    plainEnglishExplanation
+  }
+}
 ```
 
-Declared in [`src/graphql/queries.ts`](./src/graphql/queries.ts) and used with Apollo `useQuery` on the interview prep page.
+Each page passes its query into `TopicGlossaryPage`, which loads topics with Apollo `useQuery`.

@@ -1,0 +1,82 @@
+.nav {
+  border-bottom: 1px solid rgb(237 231 253);
+  background: linear-gradient(to bottom, #ffffff, #fcfaff);
+}
+
+.navAcelab {
+  border-bottom-color: #c5e6d8;
+  background: linear-gradient(to bottom, #ffffff, #f4faf7);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  margin: 0 auto;
+  padding: 0.65rem clamp(1.5rem, 4vw, 2.75rem);
+  max-width: 1200px;
+  list-style: none;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #524a6e;
+  text-decoration: none;
+  transition:
+    color 150ms ease,
+    background 150ms ease,
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.link:hover {
+  color: #5b21b6;
+  background: rgb(250 246 254);
+  border-color: rgb(237 231 253);
+}
+
+.navAcelab .link:hover {
+  color: #14413a;
+  background: #e3f3ec;
+  border-color: #c5e6d8;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
+
+.navAcelab .link:focus-visible {
+  outline-color: #1b7f5c;
+}
+
+.linkActive {
+  color: #5b21b6;
+  background: #fff;
+  border-color: #ddd6fe;
+  box-shadow: 0 1px 0 rgb(245 239 254);
+}
+
+.linkActiveAcelab {
+  color: #14413a;
+  background: #e3f3ec;
+  border-color: #8fd4b8;
+  box-shadow: 0 1px 0 rgb(232 245 239);
+}
+
+.navAcelab .linkActiveAcelab:hover {
+  color: #14413a;
+  background: #d4ebe2;
+  border-color: #7ec9a8;
+}

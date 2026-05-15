@@ -4,6 +4,8 @@ import { ApolloProvider } from "@apollo/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { apolloClient } from "./graphql/client";
+import AppLayout from "./layouts/AppLayout";
+import AIRolePage from "./pages/AIRolePage";
 import InterviewPrepPage from "./pages/InterviewPrepPage";
 import "./index.css";
 
@@ -18,7 +20,10 @@ function App() {
   return (
     <BrowserRouter basename={routerBasename()}>
       <Routes>
-        <Route path="/" element={<InterviewPrepPage />} />
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<InterviewPrepPage />} />
+          <Route path="/ai-role" element={<AIRolePage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,590 @@
+{
+  "ab_testing": {
+    "explanation": "“A/B testing” is an experimentation method where two or more variations of a feature or experience are compared to determine which performs better based on user behavior and metrics.",
+    "plainEnglishExplanation": "It means testing different versions of something to see which works better."
+  },
+  "activation_metrics": {
+    "explanation": "“Activation metrics” are measurements used to track whether new users successfully reach meaningful early product usage and realize value from the system.",
+    "plainEnglishExplanation": "They measure whether new users actually start getting value from the product."
+  },
+  "active_project_retention": {
+    "explanation": "“Active project retention” measures whether users continue using a product throughout ongoing projects rather than abandoning it after initial usage.",
+    "plainEnglishExplanation": "It measures whether users keep using the product during real projects."
+  },
+  "adoption_challenges": {
+    "explanation": "“Adoption challenges” are obstacles that prevent users or organizations from successfully learning, trusting, or integrating a product into their workflows.",
+    "plainEnglishExplanation": "They’re the reasons users may struggle to start using a product."
+  },
+  "ai_assisted_workflows": {
+    "explanation": "“AI-assisted workflows” are workflows where AI systems help users perform tasks more efficiently through automation, recommendations, retrieval, summarization, or intelligent suggestions.",
+    "plainEnglishExplanation": "They’re workflows where AI helps users complete tasks faster and more effectively."
+  },
+  "ai_first_engineering": {
+    "explanation": "“AI-first engineering” is an approach where AI capabilities are treated as a core part of the product experience and system architecture from the beginning rather than as an add-on feature.",
+    "plainEnglishExplanation": "It means designing products with AI built into the core experience from the start."
+  },
+  "ai_relevance": {
+    "explanation": "“AI relevance” refers to how useful, accurate, and contextually appropriate AI-generated responses or recommendations are for users.",
+    "plainEnglishExplanation": "It means how well AI answers actually fit what users need."
+  },
+  "api_design": {
+    "explanation": "“API design” is the process of structuring interfaces that allow systems and applications to communicate clearly, efficiently, and reliably.",
+    "plainEnglishExplanation": "It means designing clean and reliable ways for systems to communicate."
+  },
+  "applied_ai_systems": {
+    "explanation": "“Applied AI systems” are practical AI-powered systems designed to solve real-world problems through workflows, automation, retrieval, recommendations, or decision support.",
+    "plainEnglishExplanation": "They’re AI systems built to solve real business or user problems."
+  },
+  "approval_workflows": {
+    "explanation": "“Approval workflows” are structured processes where changes, documents, products, or decisions must be reviewed and approved before moving forward.",
+    "plainEnglishExplanation": "They’re workflows where things need to be reviewed and approved step by step."
+  },
+  "architectural_workflows": {
+    "explanation": "“Architectural workflows” are the structured processes used by architects and design teams to manage research, specifications, documentation, approvals, and project coordination.",
+    "plainEnglishExplanation": "They’re the workflows architects use to manage projects and design work."
+  },
+  "architecture_tradeoffs": {
+    "explanation": "“Architecture tradeoffs” are the decisions engineers make when balancing competing priorities such as scalability, complexity, cost, reliability, and performance in system design.",
+    "plainEnglishExplanation": "It means choosing the best compromise between different technical priorities."
+  },
+  "backend_apis": {
+    "explanation": "“Backend APIs” are interfaces that allow frontend applications and other systems to communicate with backend services and data sources. They define structured ways to request, send, and manipulate data while handling business logic, authentication, validation, and integrations.",
+    "plainEnglishExplanation": "They’re the systems behind the scenes that let apps talk to servers and get or send data."
+  },
+  "bim_workflows": {
+    "explanation": "“BIM workflows” are processes related to Building Information Modeling systems used in architecture, engineering, and construction. These workflows manage digital building data, specifications, materials, and coordination throughout a project lifecycle.",
+    "plainEnglishExplanation": "They’re the digital workflows used to manage building and construction information."
+  },
+  "change_management": {
+    "explanation": "“Change management” refers to the processes used to track, coordinate, communicate, and safely implement changes in systems, workflows, or projects while minimizing disruption and errors.",
+    "plainEnglishExplanation": "It means managing changes carefully so updates don’t create confusion or problems."
+  },
+  "change_propagation": {
+    "explanation": "“Change propagation” refers to automatically spreading updates or modifications across connected systems, workflows, or dependent data structures.",
+    "plainEnglishExplanation": "It means updates automatically flow through connected systems."
+  },
+  "cloud_native_systems": {
+    "explanation": "“Cloud-native systems” are systems specifically designed to run efficiently in cloud environments using scalable, resilient, and automated infrastructure patterns.",
+    "plainEnglishExplanation": "They’re systems built specifically to run well in the cloud."
+  },
+  "collaboration_systems": {
+    "explanation": "“Collaboration systems” are platforms and tools designed to help multiple users coordinate work, share information, and communicate effectively.",
+    "plainEnglishExplanation": "They’re systems that help teams work together."
+  },
+  "compare_to_spec_conversion": {
+    "explanation": "“Compare-to-spec conversion” measures how often users move from comparison workflows into finalized specification actions or decisions.",
+    "plainEnglishExplanation": "It measures whether product comparisons actually lead to finalized specs or decisions."
+  },
+  "comparison_workflows": {
+    "explanation": "“Comparison workflows” are workflows that allow users to evaluate and compare multiple options, products, or datasets side by side in a structured way.",
+    "plainEnglishExplanation": "They’re workflows that help users compare options more easily."
+  },
+  "customer_activation": {
+    "explanation": "“Customer activation” refers to guiding users toward meaningful engagement or successful early usage that demonstrates the value of a product.",
+    "plainEnglishExplanation": "It means helping users reach the point where the product becomes useful to them."
+  },
+  "customer_trust": {
+    "explanation": "“Customer trust” refers to the confidence users have that a product is reliable, accurate, transparent, and aligned with their interests.",
+    "plainEnglishExplanation": "It means users believe the product is dependable and honest."
+  },
+  "data_freshness": {
+    "explanation": "“Data freshness” refers to how recent and up to date information is within a system. Fresh data is especially important in recommendation systems, search systems, and operational workflows.",
+    "plainEnglishExplanation": "It means making sure information is current and not outdated."
+  },
+  "data_freshness_slas": {
+    "explanation": "“Data freshness SLAs” are defined expectations around how quickly systems must update data after changes occur, ensuring information remains timely and reliable.",
+    "plainEnglishExplanation": "They’re rules for how quickly systems need to update their data."
+  },
+  "data_normalization": {
+    "explanation": "“Data normalization” is the process of converting inconsistent or differently formatted data into a standardized structure that systems can process reliably.",
+    "plainEnglishExplanation": "It means making data consistent and standardized."
+  },
+  "deployment_pipelines": {
+    "explanation": "“Deployment pipelines” are automated workflows that move code from development through testing and into production environments safely and consistently.",
+    "plainEnglishExplanation": "They’re automated systems for releasing software updates."
+  },
+  "design_system_workflows": {
+    "explanation": "“Design-system workflows” are processes that ensure reusable UI components, design standards, and implementation patterns remain consistent across products and teams.",
+    "plainEnglishExplanation": "They’re workflows that keep design systems and UI components consistent."
+  },
+  "deterministic_validation": {
+    "explanation": "“Deterministic validation” refers to using strict, rule-based checks to ensure data or outputs meet required formats, constraints, and correctness standards before being accepted or exported.",
+    "plainEnglishExplanation": "It means using exact rules to verify that data or outputs are correct."
+  },
+  "distributed_systems": {
+    "explanation": "“Distributed systems” are systems where multiple independent computers or services work together over a network to provide a unified application or platform.",
+    "plainEnglishExplanation": "They’re systems made of many connected machines working together."
+  },
+  "divergence_detection": {
+    "explanation": "“Divergence detection” refers to identifying situations where connected systems, datasets, or workflows begin drifting out of alignment or consistency over time.",
+    "plainEnglishExplanation": "It means detecting when systems stop matching each other properly."
+  },
+  "document_correctness": {
+    "explanation": "“Document correctness” refers to ensuring generated or managed documents are accurate, complete, properly formatted, and consistent with the intended source data or standards.",
+    "plainEnglishExplanation": "It means making sure documents are accurate and don’t contain mistakes."
+  },
+  "engineering_judgment": {
+    "explanation": "“Engineering judgment” is the ability to make sound technical decisions by balancing tradeoffs such as scalability, complexity, reliability, cost, and maintainability.",
+    "plainEnglishExplanation": "It means making smart technical decisions instead of blindly following trends or overengineering."
+  },
+  "enterprise_adoption": {
+    "explanation": "“Enterprise adoption” refers to how successfully large organizations integrate and consistently use a product across teams, workflows, and projects.",
+    "plainEnglishExplanation": "It means large companies successfully start using and relying on a product."
+  },
+  "enterprise_onboarding": {
+    "explanation": "“Enterprise onboarding” refers to the structured process of helping large organizations successfully adopt and integrate products into their teams and workflows.",
+    "plainEnglishExplanation": "It means helping large companies get started using a product successfully."
+  },
+  "enterprise_workflows": {
+    "explanation": "“Enterprise workflows” are large-scale organizational processes involving multiple teams, approvals, systems, and operational requirements within businesses or institutions.",
+    "plainEnglishExplanation": "They’re the structured processes large companies use to get work done."
+  },
+  "etl": {
+    "explanation": "“ETL” stands for Extract, Transform, and Load, which is a process used to move and prepare data from multiple sources into a usable format for storage, analysis, or applications. It involves collecting raw data, cleaning and restructuring it, and loading it into a database or platform.",
+    "plainEnglishExplanation": "It means pulling data from different places, cleaning it up, and putting it somewhere useful."
+  },
+  "evals": {
+    "explanation": "“Evals” are structured evaluations used to measure the quality, accuracy, and reliability of AI systems, retrieval systems, or recommendation systems. They help teams compare performance and identify areas for improvement.",
+    "plainEnglishExplanation": "They’re tests used to measure how well AI or search systems are performing."
+  },
+  "expert_reviewed_queries": {
+    "explanation": "“Expert-reviewed queries” are search or evaluation queries that have been validated by domain experts to ensure quality, relevance, and correctness during testing.",
+    "plainEnglishExplanation": "They’re test searches checked by experts to make sure evaluations are meaningful."
+  },
+  "explainable_ai": {
+    "explanation": "“Explainable AI” refers to AI systems that provide understandable reasoning or context for their outputs and recommendations. The goal is to improve transparency, trust, and user confidence in AI-assisted decisions.",
+    "plainEnglishExplanation": "It means AI that can explain why it gave a certain answer or recommendation."
+  },
+  "feedback_loops": {
+    "explanation": "“Feedback loops” are processes where user behavior, corrections, or outcomes are fed back into a system to improve future performance, recommendations, or decisions.",
+    "plainEnglishExplanation": "It means learning from user actions and using that information to improve the system."
+  },
+  "free_vs_enterprise_monetization": {
+    "explanation": "“Free vs enterprise monetization” refers to balancing broad adoption through free product offerings while generating revenue through advanced enterprise capabilities and paid plans.",
+    "plainEnglishExplanation": "It means balancing free access with making money from larger or advanced customers."
+  },
+  "generated_documentation": {
+    "explanation": "“Generated documentation” refers to documentation automatically created from structured data, systems, templates, or workflows instead of being written manually.",
+    "plainEnglishExplanation": "It means documents are automatically created by software."
+  },
+  "generated_keynotes": {
+    "explanation": "“Generated keynotes” are automatically created annotation references and structured labels used within architectural and engineering documentation systems.",
+    "plainEnglishExplanation": "They’re automatically generated labels and references used in technical documents."
+  },
+  "generated_schedules": {
+    "explanation": "“Generated schedules” are automatically produced schedules or project tables created from connected project data and workflows.",
+    "plainEnglishExplanation": "They’re schedules automatically created from project information."
+  },
+  "generated_specs": {
+    "explanation": "“Generated specs” are technical specifications automatically created from structured project data, templates, standards, or AI-assisted systems.",
+    "plainEnglishExplanation": "They’re technical specs automatically created by software systems."
+  },
+  "grounded_ai_outputs": {
+    "explanation": "“Grounded AI outputs” are AI-generated responses that are tied to verified external data sources, retrieval systems, or validated information rather than unsupported model guesses.",
+    "plainEnglishExplanation": "It means AI answers are based on real information instead of made-up responses."
+  },
+  "hallucination_reduction": {
+    "explanation": "“Hallucination reduction” refers to techniques used to minimize incorrect, fabricated, or misleading outputs generated by AI systems.",
+    "plainEnglishExplanation": "It means reducing fake or incorrect answers from AI systems."
+  },
+  "held_out_datasets": {
+    "explanation": "“Held-out datasets” are datasets intentionally separated from training or development workflows so they can be used for unbiased evaluation and testing.",
+    "plainEnglishExplanation": "They’re separate datasets used to fairly test system quality."
+  },
+  "infrastructure_monitoring": {
+    "explanation": "“Infrastructure monitoring” is the practice of tracking the health and performance of servers, networks, databases, containers, and cloud systems.",
+    "plainEnglishExplanation": "It means monitoring the underlying systems that keep applications running."
+  },
+  "ingestion_pipelines": {
+    "explanation": "“Ingestion pipelines” are automated systems that collect, process, validate, normalize, and store incoming data from multiple external or internal sources.",
+    "plainEnglishExplanation": "They’re systems that automatically bring data into a platform and prepare it for use."
+  },
+  "intelligent_search": {
+    "explanation": "“Intelligent search” refers to search systems that use semantic understanding, ranking systems, AI, and contextual signals to improve result relevance beyond basic keyword matching.",
+    "plainEnglishExplanation": "It means smarter search systems that understand meaning instead of only exact words."
+  },
+  "keynote_generation": {
+    "explanation": "“Keynote generation” is the automated creation of structured annotation references and labels used in architectural and engineering documentation systems.",
+    "plainEnglishExplanation": "It means automatically creating organized labels and references for technical documents."
+  },
+  "latency_vs_accuracy": {
+    "explanation": "“Latency vs accuracy” refers to the tradeoff between delivering very fast responses and ensuring those responses are highly accurate, complete, or deeply validated.",
+    "plainEnglishExplanation": "It’s the balance between getting answers quickly and getting the best possible answers."
+  },
+  "llm_pipelines": {
+    "explanation": "“LLM pipelines” are workflows that combine large language models with supporting systems such as retrieval, validation, prompting, monitoring, and data processing to create reliable AI-powered applications.",
+    "plainEnglishExplanation": "They’re the connected steps and systems that make AI apps work reliably."
+  },
+  "low_latency_systems": {
+    "explanation": "“Low latency systems” are systems optimized to respond very quickly to requests with minimal delay. They are critical in user-facing applications where responsiveness directly affects user experience and trust.",
+    "plainEnglishExplanation": "They’re systems built to feel very fast and responsive."
+  },
+  "manufacturer_engagement": {
+    "explanation": "“Manufacturer engagement” refers to how manufacturers interact with a platform, participate in workflows, provide updates, and influence product ecosystems.",
+    "plainEnglishExplanation": "It means how manufacturers participate and interact within the platform."
+  },
+  "manufacturer_neutrality": {
+    "explanation": "“Manufacturer neutrality” refers to maintaining unbiased recommendations and rankings without unfairly prioritizing specific manufacturers due to financial relationships or sponsorships.",
+    "plainEnglishExplanation": "It means treating manufacturers fairly instead of favoring whoever pays more."
+  },
+  "manufacturer_response_sla": {
+    "explanation": "“Manufacturer response SLA” refers to defined expectations for how quickly manufacturers must respond to requests, updates, or workflow actions within a platform.",
+    "plainEnglishExplanation": "It means manufacturers are expected to respond within a certain amount of time."
+  },
+  "mapping_success_rates": {
+    "explanation": "“Mapping success rates” measure how often systems successfully connect, align, or synchronize related data structures, fields, or workflows without errors.",
+    "plainEnglishExplanation": "It measures how often systems correctly connect related information."
+  },
+  "masterformat": {
+    "explanation": "“MasterFormat” is a standardized system for organizing construction specifications and project information into structured categories and divisions. It is widely used in architecture and construction documentation workflows.",
+    "plainEnglishExplanation": "It’s a standard way of organizing construction and specification documents."
+  },
+  "material_intelligence": {
+    "explanation": "“Material intelligence” refers to systems and workflows that organize, analyze, and surface useful information about materials, specifications, sustainability, performance, and compatibility to improve decision-making.",
+    "plainEnglishExplanation": "It means using smart systems to better understand and manage material information."
+  },
+  "material_system_of_record": {
+    "explanation": "A “material system-of-record” is a centralized authoritative source for managing and tracking approved material data, specifications, and related project information.",
+    "plainEnglishExplanation": "It’s the main trusted system for storing material and specification information."
+  },
+  "messy_data_handling": {
+    "explanation": "“Messy data handling” refers to processing incomplete, inconsistent, duplicated, or poorly structured data and transforming it into reliable, usable formats.",
+    "plainEnglishExplanation": "It means cleaning up disorganized or inconsistent data so systems can use it properly."
+  },
+  "metadata_enrichment": {
+    "explanation": "“Metadata enrichment” is the process of adding additional structured information, tags, or attributes to data in order to improve searchability, filtering, and understanding.",
+    "plainEnglishExplanation": "It means adding extra useful information to data so systems can use it better."
+  },
+  "model_lifecycle": {
+    "explanation": "“Model lifecycle” refers to the full process of developing, deploying, monitoring, updating, and maintaining machine learning or AI models over time.",
+    "plainEnglishExplanation": "It means managing AI models from creation through long-term maintenance."
+  },
+  "monitoring": {
+    "explanation": "“Monitoring” is the practice of continuously tracking the health, performance, and reliability of systems and applications using metrics, alerts, and dashboards.",
+    "plainEnglishExplanation": "It means constantly checking whether systems are working properly."
+  },
+  "network_effects": {
+    "explanation": "“Network effects” occur when a product becomes more valuable as more users, contributors, or connected participants join and interact within the ecosystem.",
+    "plainEnglishExplanation": "It means the product becomes more useful as more people use it."
+  },
+  "north_star_metrics": {
+    "explanation": "“North-star metrics” are the primary high-level metrics a company uses to measure long-term product success and overall business value.",
+    "plainEnglishExplanation": "They’re the most important numbers used to measure whether the product is succeeding."
+  },
+  "observability": {
+    "explanation": "“Observability” is the ability to understand and monitor the internal state and behavior of a system through logs, metrics, traces, and monitoring tools. It helps teams identify issues, debug problems, and maintain reliability.",
+    "plainEnglishExplanation": "It means having enough visibility into your system to understand what’s happening and fix problems."
+  },
+  "observability_tooling": {
+    "explanation": "“Observability tooling” refers to software and platforms used to collect logs, traces, metrics, and monitoring data to understand system behavior and diagnose problems.",
+    "plainEnglishExplanation": "They’re tools used to monitor and understand system health."
+  },
+  "offline_evals": {
+    "explanation": "“Offline evals” are evaluations performed using saved datasets, benchmark queries, or historical examples instead of live production traffic.",
+    "plainEnglishExplanation": "They’re tests run on existing datasets instead of live users."
+  },
+  "onboarding_flows": {
+    "explanation": "“Onboarding flows” are guided experiences that help new users learn, set up, and successfully begin using a product or system.",
+    "plainEnglishExplanation": "They’re the steps that help new users get started successfully."
+  },
+  "onboarding_heavy_workflows": {
+    "explanation": "“Onboarding-heavy workflows” are workflows that require significant setup, guidance, training, or implementation support before users can become successful.",
+    "plainEnglishExplanation": "They’re workflows where users need a lot of help getting started."
+  },
+  "online_evals": {
+    "explanation": "“Online evals” are evaluations performed using live production traffic or real user interactions to measure how systems perform in actual usage conditions.",
+    "plainEnglishExplanation": "They’re real-world tests that measure how systems perform with actual users."
+  },
+  "operational_excellence": {
+    "explanation": "“Operational excellence” refers to consistently running systems, workflows, and teams in an efficient, reliable, scalable, and maintainable way while minimizing errors and waste.",
+    "plainEnglishExplanation": "It means running systems and processes really well and consistently."
+  },
+  "operational_metrics": {
+    "explanation": "“Operational metrics” are measurable indicators used to monitor system reliability, performance, efficiency, and operational health.",
+    "plainEnglishExplanation": "They’re numbers used to track how well systems are running."
+  },
+  "override_frequency": {
+    "explanation": "“Override frequency” refers to how often users reject, replace, or manually change system-generated recommendations or outputs, which can indicate trust or quality issues.",
+    "plainEnglishExplanation": "It measures how often users ignore or replace the system’s suggestions."
+  },
+  "performance_metrics": {
+    "explanation": "“Performance metrics” are measurements used to evaluate system responsiveness, efficiency, speed, and reliability.",
+    "plainEnglishExplanation": "They’re measurements used to see how fast and efficient systems are."
+  },
+  "portfolio_control": {
+    "explanation": "“Portfolio control” refers to managing consistency, standards, visibility, and decision-making across multiple projects, assets, or systems within an organization.",
+    "plainEnglishExplanation": "It means overseeing and managing many projects or assets together."
+  },
+  "practical_ai_engineering": {
+    "explanation": "“Practical AI engineering” refers to building AI systems with a focus on reliability, usability, monitoring, grounding, cost efficiency, and real-world operational constraints.",
+    "plainEnglishExplanation": "It means building AI systems that actually work well in real products."
+  },
+  "procurement_workflows": {
+    "explanation": "“Procurement workflows” are the processes organizations use to evaluate, select, approve, and purchase products or services.",
+    "plainEnglishExplanation": "They’re the workflows used to buy and approve products or services."
+  },
+  "product_builder": {
+    "explanation": "A “product-builder” mindset refers to focusing on creating complete, usable products that solve real user problems rather than only researching or prototyping ideas. It involves balancing technical implementation, usability, business goals, reliability, and iteration speed to deliver systems that people actively use and depend on.",
+    "plainEnglishExplanation": "It means actually building useful software people can use in the real world instead of just experimenting or researching ideas."
+  },
+  "product_discovery": {
+    "explanation": "“Product discovery” refers to the process of helping users find relevant products efficiently through search, recommendations, filtering, ranking, and exploration workflows.",
+    "plainEnglishExplanation": "It means helping users find the products they actually need."
+  },
+  "product_engineering": {
+    "explanation": "“Product engineering” refers to building software with a focus on delivering user value, business outcomes, usability, and long-term maintainability rather than only technical implementation.",
+    "plainEnglishExplanation": "It means engineering software as a real product people use, not just writing code."
+  },
+  "product_market_fit": {
+    "explanation": "“Product-market fit” refers to the stage where a product successfully satisfies a real market need and users consistently find enough value to continue using it.",
+    "plainEnglishExplanation": "It means the product solves a real problem people genuinely care about."
+  },
+  "product_scalability": {
+    "explanation": "“Product scalability” refers to a product’s ability to support growth in users, workflows, features, and operational demand without major degradation in performance or maintainability.",
+    "plainEnglishExplanation": "It means a product can grow to support more users and usage without breaking down."
+  },
+  "production_reliability": {
+    "explanation": "“Production reliability” refers to how consistently systems function correctly in live production environments used by real customers.",
+    "plainEnglishExplanation": "It means systems work reliably when real users are using them."
+  },
+  "project_based_retention": {
+    "explanation": "“Project-based retention” measures whether users continue using a product across active projects and future projects over time.",
+    "plainEnglishExplanation": "It measures whether users keep using the product from project to project."
+  },
+  "project_lifecycle": {
+    "explanation": "“Project lifecycle” refers to the full sequence of stages a project goes through, from planning and design to execution, maintenance, and completion.",
+    "plainEnglishExplanation": "It means the full timeline of a project from start to finish."
+  },
+  "project_synchronization": {
+    "explanation": "“Project synchronization” refers to keeping project-related data, workflows, and systems aligned and updated consistently across teams and tools.",
+    "plainEnglishExplanation": "It means keeping all project information updated and aligned across systems."
+  },
+  "rag_pipelines": {
+    "explanation": "“RAG pipelines” (Retrieval-Augmented Generation pipelines) combine retrieval systems with language models so that generated responses are grounded in external data sources instead of relying only on the model’s memory.",
+    "plainEnglishExplanation": "It means combining AI with search systems so the AI can answer using real information."
+  },
+  "ranking_systems": {
+    "explanation": "“Ranking systems” are systems that determine the order in which search results, recommendations, or content are displayed based on relevance, quality, or other signals. They are critical for improving discovery and user experience.",
+    "plainEnglishExplanation": "They decide what results should appear first and what should appear lower down."
+  },
+  "recall_vs_precision": {
+    "explanation": "“Recall vs precision” is a common tradeoff in search and recommendation systems where recall measures how many relevant results are found, while precision measures how accurate and useful the returned results are.",
+    "plainEnglishExplanation": "It’s the balance between finding more possible results and finding only the most accurate ones."
+  },
+  "recommendation_explainability": {
+    "explanation": "“Recommendation explainability” refers to providing understandable reasons for why recommendations were generated, improving transparency and user trust.",
+    "plainEnglishExplanation": "It means explaining why the system recommended something."
+  },
+  "recommendation_grounding": {
+    "explanation": "“Recommendation grounding” refers to ensuring recommendations are supported by trustworthy data, retrieval systems, standards, or explainable reasoning.",
+    "plainEnglishExplanation": "It means recommendations are backed by real data and clear reasoning."
+  },
+  "recommendation_quality": {
+    "explanation": "“Recommendation quality” refers to how useful, relevant, and trustworthy recommendations are for users. High-quality recommendations increase engagement and confidence while reducing irrelevant or confusing suggestions.",
+    "plainEnglishExplanation": "It means how good a system is at recommending the right things to users."
+  },
+  "recommendation_ranking": {
+    "explanation": "“Recommendation ranking” refers to the process of ordering recommended items based on relevance, quality, trust, personalization, or other ranking signals.",
+    "plainEnglishExplanation": "It means deciding which recommendations should appear first."
+  },
+  "recommendation_systems": {
+    "explanation": "“Recommendation systems” are algorithms and systems that analyze user behavior and preferences to suggest relevant products, content, or actions. They are widely used to improve engagement and personalization in applications.",
+    "plainEnglishExplanation": "They’re systems that suggest things users are likely to want or care about."
+  },
+  "recommendation_trust": {
+    "explanation": "“Recommendation trust” refers to the confidence users have that recommendations are accurate, unbiased, useful, and based on reliable information.",
+    "plainEnglishExplanation": "It means users believe the system’s recommendations are reliable and fair."
+  },
+  "reliability_engineering": {
+    "explanation": "“Reliability engineering” is the practice of designing, monitoring, and improving systems to reduce failures and maintain stable performance over time.",
+    "plainEnglishExplanation": "It means engineering systems to stay dependable and avoid failures."
+  },
+  "retrieval_grounding": {
+    "explanation": "“Retrieval grounding” is the practice of connecting AI-generated outputs to retrieved documents, datasets, or verified sources to improve accuracy and trustworthiness.",
+    "plainEnglishExplanation": "It means using retrieved real-world data to support AI answers."
+  },
+  "retrieval_quality": {
+    "explanation": "“Retrieval quality” refers to how accurately and reliably a system returns the most relevant results for a query. High retrieval quality means users receive information that is useful, trustworthy, and closely aligned with their intent.",
+    "plainEnglishExplanation": "It means how good a search system is at finding the right results."
+  },
+  "retrieval_systems": {
+    "explanation": "“Retrieval systems” are systems designed to locate and return the most relevant information from large datasets based on a query or user request. They are commonly used in search engines, recommendation systems, and AI pipelines to provide grounded and useful results.",
+    "plainEnglishExplanation": "They’re systems that find the most relevant information when someone searches for something."
+  },
+  "reusable_standards": {
+    "explanation": "“Reusable standards” are approved rules, templates, or configurations designed to be consistently applied across multiple workflows or projects.",
+    "plainEnglishExplanation": "They’re standards that can be reused repeatedly to save time and improve consistency."
+  },
+  "sales_led_product_motion": {
+    "explanation": "“Sales-led product motion” refers to a business strategy where customer acquisition and adoption are primarily driven through direct sales relationships and onboarding efforts.",
+    "plainEnglishExplanation": "It means the company grows mainly through sales teams and direct customer relationships."
+  },
+  "save_to_project_rate": {
+    "explanation": "“Save-to-project rate” measures how often users save recommended or discovered items into active projects, helping evaluate recommendation and search usefulness.",
+    "plainEnglishExplanation": "It measures how often users save search results or recommendations into projects."
+  },
+  "scalability_vs_freshness": {
+    "explanation": "“Scalability vs freshness” refers to the tradeoff between handling large-scale workloads efficiently while also keeping data highly current and continuously updated.",
+    "plainEnglishExplanation": "It’s the balance between supporting lots of users and keeping data constantly updated."
+  },
+  "schedule_generation": {
+    "explanation": "“Schedule generation” refers to automatically creating structured schedules or project tables from connected project data and workflows.",
+    "plainEnglishExplanation": "It means automatically creating organized project schedules and tables."
+  },
+  "search_experience": {
+    "explanation": "“Search experience” refers to the overall usability, relevance, speed, and effectiveness of a search system from a user perspective.",
+    "plainEnglishExplanation": "It means how good and useful the search system feels to users."
+  },
+  "search_relevance": {
+    "explanation": "“Search relevance” refers to how accurately search results match a user’s intent, needs, or expectations.",
+    "plainEnglishExplanation": "It means how useful and accurate search results are."
+  },
+  "search_to_shortlist_conversion": {
+    "explanation": "“Search-to-shortlist conversion” measures how often users move from searching to saving or shortlisting results, helping evaluate search and recommendation effectiveness.",
+    "plainEnglishExplanation": "It measures whether users actually find useful results after searching."
+  },
+  "semantic_search": {
+    "explanation": "“Semantic search” is a search approach that retrieves results based on meaning, relationships, and intent rather than exact keyword matches.",
+    "plainEnglishExplanation": "It means searching based on meaning instead of exact wording."
+  },
+  "sla_monitoring": {
+    "explanation": "“SLA monitoring” is the practice of tracking whether systems and services meet agreed-upon performance and reliability standards defined in service-level agreements.",
+    "plainEnglishExplanation": "It means checking whether systems are meeting promised reliability and performance targets."
+  },
+  "spec_throughput": {
+    "explanation": "“Spec throughput” refers to the speed and efficiency with which technical specifications are created, processed, reviewed, and completed within workflows.",
+    "plainEnglishExplanation": "It measures how quickly teams can produce and complete specifications."
+  },
+  "specification_consistency": {
+    "explanation": "“Specification consistency” refers to ensuring technical specifications remain aligned, accurate, standardized, and free from conflicting information across workflows and systems.",
+    "plainEnglishExplanation": "It means making sure specifications stay accurate and match everywhere."
+  },
+  "specification_generation": {
+    "explanation": "“Specification generation” refers to automatically creating structured technical specifications and documentation based on project data, selected materials, standards, or templates.",
+    "plainEnglishExplanation": "It means automatically generating technical project documents and specs."
+  },
+  "specification_intelligence": {
+    "explanation": "“Specification intelligence” refers to systems that use structured data, automation, and AI to improve how technical specifications are created, validated, reused, and managed.",
+    "plainEnglishExplanation": "It means using smart systems to improve technical specifications and documentation."
+  },
+  "specification_workflows": {
+    "explanation": "“Specification workflows” are the systems and processes used to create, manage, validate, and update technical project specifications throughout a project lifecycle.",
+    "plainEnglishExplanation": "They’re the workflows used to create and manage technical project specs."
+  },
+  "standards_compliance": {
+    "explanation": "“Standards compliance” refers to ensuring systems, data, workflows, or documents follow required industry standards, regulations, or organizational rules.",
+    "plainEnglishExplanation": "It means making sure everything follows required rules and standards."
+  },
+  "standards_reuse": {
+    "explanation": "“Standards reuse” refers to reusing previously approved templates, specifications, rules, or configurations across projects to improve consistency, quality, and efficiency.",
+    "plainEnglishExplanation": "It means reusing proven standards instead of rebuilding everything from scratch."
+  },
+  "standards_templates": {
+    "explanation": "“Standards templates” are reusable predefined structures, configurations, or documents used to maintain consistency and reduce repetitive work across projects.",
+    "plainEnglishExplanation": "They’re reusable templates that help keep work consistent."
+  },
+  "structured_fields": {
+    "explanation": "“Structured fields” are clearly defined data fields with consistent formats and meanings that allow systems to reliably store, process, search, and validate information.",
+    "plainEnglishExplanation": "They’re organized pieces of data stored in a predictable structure."
+  },
+  "structured_mapping": {
+    "explanation": "“Structured mapping” refers to organizing and connecting data into defined fields, relationships, and categories so it can be reliably processed and reused across systems.",
+    "plainEnglishExplanation": "It means organizing information into structured categories and relationships."
+  },
+  "sustainability_experts": {
+    "explanation": "“Sustainability experts” are specialists focused on environmental impact, sustainability standards, compliance, and sustainable decision-making within workflows and systems.",
+    "plainEnglishExplanation": "They’re specialists who focus on environmental sustainability and responsible practices."
+  },
+  "sustainability_visibility": {
+    "explanation": "“Sustainability visibility” refers to making sustainability-related information, metrics, and impacts clearly accessible throughout workflows and decision-making systems.",
+    "plainEnglishExplanation": "It means making environmental and sustainability information easy to see and understand."
+  },
+  "sync_divergence": {
+    "explanation": "“Sync divergence” occurs when connected systems gradually become inconsistent or misaligned because updates fail, are delayed, or are processed differently.",
+    "plainEnglishExplanation": "It means connected systems stop matching each other correctly."
+  },
+  "sync_failure_rates": {
+    "explanation": "“Sync failure rates” measure how often synchronization processes between systems fail, become inconsistent, or do not complete successfully. Monitoring these rates helps teams identify reliability and integration issues.",
+    "plainEnglishExplanation": "It measures how often connected systems fail to stay updated correctly."
+  },
+  "sync_monitoring": {
+    "explanation": "“Sync monitoring” is the process of tracking and validating whether connected systems remain properly synchronized over time. It helps detect failures, mismatches, delays, or missing updates between systems.",
+    "plainEnglishExplanation": "It means checking that connected systems are staying updated with each other correctly."
+  },
+  "synchronization": {
+    "explanation": "“Synchronization” refers to keeping data, systems, or workflows consistent and aligned across multiple services or applications. It ensures that updates made in one place are reflected correctly elsewhere.",
+    "plainEnglishExplanation": "It means making sure multiple systems stay in sync with the same information."
+  },
+  "systems_thinking": {
+    "explanation": "“Systems thinking” is the ability to understand how multiple parts of a system interact, influence each other, and create larger outcomes across technical and business workflows.",
+    "plainEnglishExplanation": "It means understanding how all the pieces of a system connect and affect each other."
+  },
+  "taxonomy_systems": {
+    "explanation": "“Taxonomy systems” are structured classification systems used to organize information into categories, hierarchies, and relationships for easier discovery and management.",
+    "plainEnglishExplanation": "They’re systems for organizing information into categories and groups."
+  },
+  "technical_architects": {
+    "explanation": "“Technical architects” are professionals responsible for defining technical standards, systems, workflows, and integration strategies within large projects or organizations.",
+    "plainEnglishExplanation": "They’re people who design and guide the technical structure of large systems or projects."
+  },
+  "technical_documentation": {
+    "explanation": "“Technical documentation” is structured written information that explains systems, workflows, APIs, configurations, or processes in a clear and maintainable way.",
+    "plainEnglishExplanation": "It’s written information that explains how systems or software work."
+  },
+  "telemetry": {
+    "explanation": "“Telemetry” is automatically collected data about system performance, behavior, and usage used for monitoring, debugging, and optimization.",
+    "plainEnglishExplanation": "It means systems automatically reporting information about themselves."
+  },
+  "trust_and_safety": {
+    "explanation": "“Trust and safety” refers to the policies, systems, and technical safeguards used to ensure platforms remain reliable, secure, accurate, and resistant to harmful or misleading behavior.",
+    "plainEnglishExplanation": "It means keeping systems safe, trustworthy, and reliable for users."
+  },
+  "unbiased_ranking": {
+    "explanation": "“Unbiased ranking” refers to ordering recommendations or search results based on relevance and quality rather than hidden commercial influence or unfair weighting.",
+    "plainEnglishExplanation": "It means ranking results fairly instead of manipulating them."
+  },
+  "usage_analytics": {
+    "explanation": "“Usage analytics” are metrics and insights collected about how users interact with systems, features, and workflows in order to guide improvements and product decisions.",
+    "plainEnglishExplanation": "It means tracking how people use a product so it can be improved."
+  },
+  "user_centered_engineering": {
+    "explanation": "“User-centered engineering” is an approach to software development that prioritizes user needs, usability, accessibility, and real-world workflows throughout system design and implementation.",
+    "plainEnglishExplanation": "It means building software around what users actually need and experience."
+  },
+  "vector_search": {
+    "explanation": "“Vector search” is a search technique that uses numerical embeddings to find content based on semantic meaning rather than exact keyword matches. It is commonly used in AI systems to retrieve related documents, products, or information by measuring similarity between vectors.",
+    "plainEnglishExplanation": "It’s a smarter kind of search that finds things based on meaning instead of exact words."
+  },
+  "white_glove_onboarding": {
+    "explanation": "“White-glove onboarding” refers to highly personalized onboarding support where teams actively help customers configure, learn, and adopt a product successfully.",
+    "plainEnglishExplanation": "It means giving customers hands-on personalized help during setup."
+  },
+  "workflow_automation": {
+    "explanation": "“Workflow automation” is the use of software systems to automatically perform repetitive or structured tasks with minimal manual intervention. It improves efficiency, consistency, and operational speed.",
+    "plainEnglishExplanation": "It means using software to automatically handle repetitive work."
+  },
+  "workflow_collaboration": {
+    "explanation": "“Workflow collaboration” refers to systems and processes that help multiple users coordinate work, share updates, manage approvals, and maintain alignment throughout a project lifecycle.",
+    "plainEnglishExplanation": "It means helping teams work together smoothly inside shared systems and processes."
+  },
+  "workflow_depth_vs_usability": {
+    "explanation": "“Workflow depth vs usability” refers to balancing advanced functionality and powerful workflows against keeping systems simple, understandable, and easy for users to adopt.",
+    "plainEnglishExplanation": "It’s the balance between giving users powerful features and keeping the product easy to use."
+  },
+  "workflow_fit": {
+    "explanation": "“Workflow fit” refers to how naturally and effectively a product integrates into existing user workflows without creating unnecessary friction or disruption.",
+    "plainEnglishExplanation": "It means the product works smoothly within how users already do their jobs."
+  },
+  "workflow_orchestration": {
+    "explanation": "“Workflow orchestration” refers to coordinating multiple systems, services, automations, and processes so complex workflows execute reliably and in the correct order.",
+    "plainEnglishExplanation": "It means coordinating many systems and processes so workflows run smoothly."
+  },
+  "workflow_synchronization": {
+    "explanation": "“Workflow synchronization” refers to coordinating updates, approvals, and state changes consistently across multiple workflows, systems, or teams.",
+    "plainEnglishExplanation": "It means keeping workflows coordinated and aligned across systems."
+  },
+  "workflow_telemetry": {
+    "explanation": "“Workflow telemetry” refers to collected operational data about how workflows behave, perform, and are used within systems.",
+    "plainEnglishExplanation": "It means collecting data about how workflows are performing and being used."
+  }
+}

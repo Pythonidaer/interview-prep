@@ -1,0 +1,10 @@
+.layout {
+  min-height: 100vh;
+}
+
+.layoutAcelab {
+  --layout-page-bg: #f0f7f4;
+  --layout-text: #1a2e28;
+  background: var(--layout-page-bg);
+  color: var(--layout-text);
+}

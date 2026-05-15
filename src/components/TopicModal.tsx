@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useId, useRef } from "react";
 
+import type { GlossaryTheme } from "../lib/glossaryTheme";
 import type { InterviewTopic } from "../graphql/topicsFromJson";
 import { fullTopicText } from "../lib/topicPreview";
 
@@ -13,6 +14,7 @@ type TopicModalProps = {
   open: boolean;
   onClose: () => void;
   returnFocusTo: HTMLElement | null;
+  theme?: GlossaryTheme;
 };
 
 export function TopicModal({
@@ -20,6 +22,7 @@ export function TopicModal({
   open,
   onClose,
   returnFocusTo,
+  theme = "default",
 }: TopicModalProps) {
   const panelRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -90,9 +93,14 @@ export function TopicModal({
 
   const hasPlain = topic.plainEnglishExplanation.length > 0;
 
+  const backdropClass =
+    theme === "acelab"
+      ? `${styles.backdrop} ${styles.themeAcelab}`
+      : styles.backdrop;
+
   return (
     <div
-      className={styles.backdrop}
+      className={backdropClass}
       role="presentation"
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) handleClose();
