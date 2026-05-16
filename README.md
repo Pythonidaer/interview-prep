@@ -36,7 +36,8 @@ This app is a static Vite build. Deployments fail or show a blank page when:
 
 1. **`base` is wrong** — GitHub project sites live at `https://<user>.github.io/<repo>/`, so JS/CSS must load from `/<repo>/assets/...`. [`vite.config.ts`](./vite.config.ts) sets **`base`** from `GITHUB_REPOSITORY` during `npm run build` in Actions (or override with `BASE_PATH=/your-repo/`). If your repo is **`YOURNAME.github.io`** (user/org site at the domain root), `base` resolves to **`/`** automatically.
 2. **Router `basename`** — [`src/main.tsx`](./src/main.tsx) uses `import.meta.env.BASE_URL` so React Router matches that prefix.
-3. **Publish `dist/`** — The workflow [`.github/workflows/deploy-github-pages.yml`](./.github/workflows/deploy-github-pages.yml) builds and uploads the **`dist`** output. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions** (not “Deploy from a branch” unless you know you want that). Check the **Actions** tab for workflow errors; first deploy can take a few minutes to go live.
+3. **Client routes on refresh** — GitHub Pages has no server rewrites. Refreshing `/interview-prep/ai-role` would 404 without a SPA fallback. After each build, [`scripts/gh-pages-spa.mjs`](./scripts/gh-pages-spa.mjs) writes `dist/404.html` (redirect) and [`index.html`](./index.html) restores the real path before React loads ([spa-github-pages](https://github.com/rafgraph/spa-github-pages)). Push to `main`/`master` so Actions redeploys.
+4. **Publish `dist/`** — The workflow [`.github/workflows/deploy-github-pages.yml`](./.github/workflows/deploy-github-pages.yml) builds and uploads the **`dist`** output. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions** (not “Deploy from a branch” unless you know you want that). Check the **Actions** tab for workflow errors; first deploy can take a few minutes to go live.
 
 **Local check of a production build** (same paths as CI):
 

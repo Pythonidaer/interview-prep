@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build && node scripts/gh-pages-spa.mjs",
     "validate:interview": "node scripts/validate-interview-json.mjs",
     "validate:ai-role": "node scripts/validate-ai-role-json.mjs",
     "preview": "vite preview"
