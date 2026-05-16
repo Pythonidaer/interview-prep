@@ -15,6 +15,21 @@ Both pages share the same card grid, search filter, and modal experience via [`s
 
 - **Run locally:** `npm install` → `npm run dev` → open the URL Vite prints (usually `http://localhost:5173/`)
 
+## Vercel
+
+Client-side routes like `/ai-role` need a fallback to `index.html` so a full page refresh does not 404. [`vercel.json`](./vercel.json) adds that rewrite.
+
+Recommended project settings:
+
+- **Framework Preset:** Vite
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
+- **Install Command:** `npm install`
+
+Do not set `BASE_PATH` on Vercel unless the app is served from a subpath. The default Vite `base` of `/` is correct for a domain-root deployment.
+
+After adding `vercel.json`, redeploy (push to the connected branch or trigger a redeploy in the Vercel dashboard).
+
 ## GitHub Pages
 
 This app is a static Vite build. Deployments fail or show a blank page when:
